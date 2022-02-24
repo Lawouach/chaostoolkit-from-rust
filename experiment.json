@@ -1,0 +1,34 @@
+{
+    "version": "1.0.0",
+    "title": "do stuff",
+    "description": "n/a",
+    "steady-state-hypothesis": {
+        "title": "n/a",
+        "probes": [
+            {
+                "type": "probe",
+                "name": "echo-hello",
+                "tolerance": 0,
+                "provider": {
+                    "type": "process",
+                    "path": "echo",
+                    "arguments": "hello boom"
+                }
+            }
+        ]
+    },
+    "method": [
+        {
+            "type": "action",
+            "name": "say-hello",
+            "provider": {
+                "type": "process",
+                "path": "echo",
+                "arguments": "hello"
+            },
+            "pauses": {
+                "after": 20
+            }
+        }
+    ]
+}

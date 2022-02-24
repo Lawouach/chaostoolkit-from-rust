@@ -1,0 +1,12 @@
+[package]
+name = "ctkrust"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+pythonize = "0.15.0"
+serde_json = "1.0"
+
+[dependencies.pyo3]
+version = "0.15.1"
+features = ["auto-initialize"]
